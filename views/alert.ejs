@@ -1,0 +1,20 @@
+
+			   
+               <%- include('partials/header') %> 	
+			   <div class="content"> 
+			         <div class="alert-content">
+					     <h2>Low Stock Alert</h2>
+						    <p>						 
+						     The following product has dropped below the minimum stock threshold:
+						    </p>
+							<ul>
+							  <li><strong>Product: </strong> <%= productName %> </li>
+							  <li><strong>SKU: </strong> <%= sku %> </li>
+							  <li><strong>Current Stock: </strong> <span style="color: red" ><%= stock %></span></li>
+							  <li><strong>Threshold: </strong> <%= threshold %> </li>
+							</ul>
+							
+							<p>Please restock immediately. </p>
+					 </div>
+					<%- include('partials/footer') %> 	   
+			   
